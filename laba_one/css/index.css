@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.red {
+    color: red;
+}
+
+img {
+    height: 25px;
+}
+
+.container {
+    display: grid;
+    grid: repeat(4, auto) / 50% 40%;
+    gap: 100px;
+    margin: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid red;
+    margin-bottom: 10px;
+}
+
+#edu {
+    grid-row: 3/5;
+    margin-left: 65px;
+}
+
+#work-exp {
+    grid-row: 1/3;
+    margin-left: 65px;
+}
+
+.blue-rectangle-list {
+    list-style-image: url('/img/Rectangle 3.png');
+}
+
+.red-rectangle-list {
+    list-style-image: url('/img/Rectangle 2.png');
+}
+
+.rectangle {
+    background-color: blue;
+    width: 70px;
+    height: 150px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.avatar {
+    height: 150px;
+    border-radius: 9999px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-text {
+    text-align: right;
+}
