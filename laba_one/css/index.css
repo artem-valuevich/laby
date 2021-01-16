@@ -81,6 +81,10 @@ progress::-webkit-progress-bar {
   border-radius: 9999px;
 }
 
+.avatar-wrapper {
+  order: 0;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -89,4 +93,25 @@ progress::-webkit-progress-bar {
 
 .right-text {
   text-align: right;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: .9em;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .avatar-wrapper {
+    order: -1;
+  }
+  .container {
+    grid: repeat(6, auto) / 100%;
+  }
+  #work-exp {
+    grid-row: 1/2;
+  }
+  #edu {
+    grid-row: 4/5;
+  }
 }
