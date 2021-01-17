@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { initAchievments, initEducation, initSkills, initWorks, initInterests, initLanguages} from "./db";
+import { initAchievments, initEducation, initSkills, initWorks, initInterests, initLanguages} from "../db";
 
 const Context = React.createContext();
 

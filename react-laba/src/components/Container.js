@@ -3,7 +3,7 @@ import Works from "./work-exp/WorkList.js"
 import Skills from "./skills/SkillsList"
 import Achievments from "./achievments/AchievmentsList"
 import Education from "./education/EducationList"
-import { useData } from "../context.js"
+import { useData } from "../contexts/containerContext"
 
 export default function Container() {
     const {languages, interests} = useData();
@@ -13,12 +13,12 @@ export default function Container() {
             <Skills />
             <Achievments />
             <Education />
-            <div>
+            <div className="grid-item">
                 <h1>Languages</h1>
                 {languages.join(', ')}
             </div>
 
-            <div>
+            <div className="grid-item">
                 <h1>Interests</h1>
                 {interests.join(' | ')}
             </div>

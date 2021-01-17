@@ -86,3 +86,11 @@ export const initEducation = [
 export const initLanguages = ["Russian", "Belarussian", "English"];
 
 export const initInterests = ["Maths", "Coding", "Development"];
+
+export const headerInfo = {
+    user: "Artem",
+    status: "Now on React!",
+    email: "artem@mail.ru",
+    phone: "+375 33 123-98-76",
+    place: "Minsk, Belarus"
+}

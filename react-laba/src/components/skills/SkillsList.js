@@ -1,12 +1,12 @@
 import React from "react"
-import { useData } from "../../context"
+import { useData } from "../../contexts/containerContext"
 import SkillsItem from "./SkillsItem"
 
 export default function Skills() {
     const {skills} = useData();
 
     return (
-        <div>
+        <div className="grid-item">
             <h1>Skills</h1>
 
             <ul>

@@ -1,17 +1,19 @@
 import React from "react"
 import title from "../img/title.jpg"
+import { useData } from "../contexts/headerContext";
 
 
 export default function Header() {
+    const {phone, email, place, user, status } = useData()
     return (
         <div className="header">
 
             <div className="flex-container">
                 <div className="rectangle" />
                 <div>
-                    <h1>Artem</h1>
+                    <h1>{user}</h1>
                     <p> 
-                        You can also check <br />the mobile version<br /> of this site
+                        {status}
                     </p>
                 </div>
             </div>
@@ -21,10 +23,11 @@ export default function Header() {
             </div>
 
             <div className="right-text">
+                <h1>Contacts</h1>
                 <ul>
-                    <li>artem@mail.ru <i className="material-icons red">email</i></li>
-                    <li>+375 33 123-98-76 <i className="material-icons red">phone</i></li>
-                    <li>Minsk, Belarus <i className="material-icons red">place</i></li>
+                    <li> {email} <i className="material-icons red">email</i></li>
+                    <li> {phone} <i className="material-icons red">phone</i></li>
+                    <li> {place} <i className="material-icons red">place</i></li>
                 </ul>
             </div>
 
