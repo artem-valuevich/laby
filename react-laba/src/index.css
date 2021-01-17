@@ -1,0 +1,130 @@
+body {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.red {
+  color: red;
+}
+
+img {
+  height: 25px;
+}
+
+progress {
+    height: 25px;
+    -webkit-appearance: none;
+  }
+
+progress::-webkit-progress-value {
+  background: red;
+}
+
+progress::-webkit-progress-inner-element {
+  border: 2px solid red;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid: repeat(4, auto) / 45% auto;
+  gap: 100px;
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid red;
+  margin-bottom: 10px;
+}
+
+#edu {
+  grid-row: 3/5;
+  margin-left: 65px;
+}
+
+#work-exp {
+  grid-row: 1/3;
+  margin-left: 65px;
+}
+
+.red-rectangle-list {
+  list-style-image: url("./img/list-marker.png");
+}
+
+.rectangle {
+  background-color: blue;
+  width: 70px;
+  height: 150px;
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.avatar {
+  height: 150px;
+  border-radius: 9999px;
+}
+
+.avatar-wrapper {
+  order: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-text {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: .9em;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .avatar-wrapper {
+    order: -1;
+  }
+  .container {
+    grid: repeat(6, auto) / 100%;
+  }
+  #work-exp {
+    grid-row: 1/2;
+  }
+  #edu {
+    grid-row: 4/5;
+  }
+}
+
+@media (max-width: 950px)
+{
+  .container {
+    grid: repeat(6, auto) / 100%;
+  }
+  #work-exp {
+    grid-row: 1/2;
+  }
+  #edu {
+    grid-row: 4/5;
+  }
+}

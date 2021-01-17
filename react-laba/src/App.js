@@ -1,5 +1,15 @@
 import React from 'react'
+import "./index.css"
+import Header from "./components/Header"
+import Container from "./components/Container"
+import ContextProvider from "./context"
 
 export default function App() {
-  return <h1>React resume</h1>
+  return (
+    <ContextProvider>
+      <Header />
+      <Container />
+    </ContextProvider>
+
+  )
 }
